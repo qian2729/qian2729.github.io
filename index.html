@@ -490,6 +490,15 @@
 </li>
 </ol>
 <h2 id="配置域名"><a href="#配置域名" class="headerlink" title="配置域名"></a>配置域名</h2><p>在/blog/themes/next/source目录下新建文件名为：CNAME文件，注意没有后缀名！直接将自己的域名如：gonghonglou.com写入。</p>
+<h2 id="将项目部署到Coding上"><a href="#将项目部署到Coding上" class="headerlink" title="将项目部署到Coding上"></a>将项目部署到Coding上</h2><ol>
+<li>在Coding上创建项目</li>
+<li><p>配置_config.yml</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repository: </div><div class="line">            github: git@github.com:gonghonglou/gonghonglou.github.io.git</div><div class="line">            coding: git@git.coding.net:gonghonglou/gonghonglou.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
+</li>
+<li><p>cd 到本地 blog/source 目录下执行如下命令新建 Staticfile 文件，原因是 coding.net 需要以这个文件来作为静态文件部署的标志，就是说看到这个 Staticfile 就知道按照静态文件来发布。</p>
+</li>
+<li>个人域名添加两条 CNAME 解析。将github.io. 解析为 [海外] ，将 coding.me. 解析为 [默认]<br><img src="http://image.gonghonglou.com/firstblog/two-cname.png" alt=""></li>
+</ol>
 
           
         
