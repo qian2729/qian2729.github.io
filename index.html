@@ -448,8 +448,7 @@
 
       
         
-          
-            <h2 id="本地依赖环境"><a href="#本地依赖环境" class="headerlink" title="本地依赖环境"></a>本地依赖环境</h2><p>在本地安装git、nodejs环境</p>
+          <h2 id="本地依赖环境"><a href="#本地依赖环境" class="headerlink" title="本地依赖环境"></a>本地依赖环境</h2><p>在本地安装git、nodejs环境</p>
 <h2 id="配置hexo"><a href="#配置hexo" class="headerlink" title="配置hexo"></a>配置hexo</h2><ol>
 <li><p>安装hexo</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo-cli</div></pre></td></tr></table></figure>
@@ -459,48 +458,13 @@
 </li>
 </ol>
 <p>这样最简单的hexo本地环境就配好了</p>
-<h2 id="下面是常用的hexo命令"><a href="#下面是常用的hexo命令" class="headerlink" title="下面是常用的hexo命令"></a>下面是常用的hexo命令</h2><ul>
-<li><p>创建新的博客</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new blog_name</div></pre></td></tr></table></figure>
-</li>
-<li><p>生成静态页面</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo g # 或者hexo generate</div></pre></td></tr></table></figure>
-</li>
-<li><p>在本地查看网页效果（在浏览器访问localhost:4000）</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo s # 或者hexo server</div></pre></td></tr></table></figure>
-</li>
-<li><p>生成静态页面并部署到GitHub</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo generate -d</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="配置github"><a href="#配置github" class="headerlink" title="配置github"></a>配置github</h2><ol>
-<li><p>设置github部署插件</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
-</li>
-<li><p>修改_config.yml配置文件中的deploy部分</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: &lt;repository url&gt;</div><div class="line">  branch: [branch]</div><div class="line">  message: [message]</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<h2 id="更换next主题"><a href="#更换next主题" class="headerlink" title="更换next主题"></a>更换next主题</h2><ol>
-<li><p>下载next主题到themes文件夹下</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone https://github.com/iissnan/hexo-theme-next themes/next</div></pre></td></tr></table></figure>
-</li>
-<li><p>修改_config.yml配置文件中的theme为next</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">theme: next</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<h2 id="配置域名"><a href="#配置域名" class="headerlink" title="配置域名"></a>配置域名</h2><p>在/blog/themes/next/source目录下新建文件名为：CNAME文件，注意没有后缀名！直接将自己的域名如：gonghonglou.com写入。</p>
-<h2 id="将项目部署到Coding上"><a href="#将项目部署到Coding上" class="headerlink" title="将项目部署到Coding上"></a>将项目部署到Coding上</h2><ol>
-<li>在Coding上创建项目</li>
-<li><p>配置_config.yml</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repository: </div><div class="line">            github: git@github.com:gonghonglou/gonghonglou.github.io.git</div><div class="line">            coding: git@git.coding.net:gonghonglou/gonghonglou.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
-</li>
-<li><p>cd 到本地 blog/source 目录下执行如下命令新建 Staticfile 文件，原因是 coding.net 需要以这个文件来作为静态文件部署的标志，就是说看到这个 Staticfile 就知道按照静态文件来发布。</p>
-</li>
-<li>个人域名添加两条 CNAME 解析。将github.io. 解析为 [海外] ，将 coding.me. 解析为 [默认]<br><img src="http://image.gonghonglou.com/firstblog/two-cname.png" alt=""></li>
-</ol>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/04/28/using-hexo/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
