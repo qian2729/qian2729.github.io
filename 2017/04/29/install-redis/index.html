@@ -90,17 +90,17 @@
 
 
 
-<meta name="description" content="安装pip 1sudo apt install python-pip  安装Flask 1pip install Flask  hello word 123456789from flask import Flaskapp = Flask(__name__)@app.route(&quot;/&quot;)def hello():    return &quot;Hello World!&quot;if __name__ == &quot;__m">
+<meta name="description" content="依赖环境 1sudo apt-get install build-essential tcl  安装redis 1234567cd /tmpcurl -O http://download.redis.io/redis-stable.tar.gztar xzvf redis-stable.tar.gzcd redis-stablemakemake testsudo make install  配置">
 <meta name="keywords">
 <meta property="og:type" content="article">
-<meta property="og:title" content="flask">
-<meta property="og:url" content="http://codingforfun.cn/2017/04/29/flask/index.html">
+<meta property="og:title" content="安装redis">
+<meta property="og:url" content="http://codingforfun.cn/2017/04/29/install-redis/index.html">
 <meta property="og:site_name" content="Codingforfun">
-<meta property="og:description" content="安装pip 1sudo apt install python-pip  安装Flask 1pip install Flask  hello word 123456789from flask import Flaskapp = Flask(__name__)@app.route(&quot;/&quot;)def hello():    return &quot;Hello World!&quot;if __name__ == &quot;__m">
-<meta property="og:updated_time" content="2017-04-29T03:12:24.000Z">
+<meta property="og:description" content="依赖环境 1sudo apt-get install build-essential tcl  安装redis 1234567cd /tmpcurl -O http://download.redis.io/redis-stable.tar.gztar xzvf redis-stable.tar.gzcd redis-stablemakemake testsudo make install  配置">
+<meta property="og:updated_time" content="2017-04-29T03:26:17.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="flask">
-<meta name="twitter:description" content="安装pip 1sudo apt install python-pip  安装Flask 1pip install Flask  hello word 123456789from flask import Flaskapp = Flask(__name__)@app.route(&quot;/&quot;)def hello():    return &quot;Hello World!&quot;if __name__ == &quot;__m">
+<meta name="twitter:title" content="安装redis">
+<meta name="twitter:description" content="依赖环境 1sudo apt-get install build-essential tcl  安装redis 1234567cd /tmpcurl -O http://download.redis.io/redis-stable.tar.gztar xzvf redis-stable.tar.gzcd redis-stablemakemake testsudo make install  配置">
 
 
 
@@ -128,13 +128,13 @@
 
 
 
-  <link rel="canonical" href="http://codingforfun.cn/2017/04/29/flask/"/>
+  <link rel="canonical" href="http://codingforfun.cn/2017/04/29/install-redis/"/>
 
 
 
 
 
-  <title>flask | Codingforfun</title>
+  <title>安装redis | Codingforfun</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -253,7 +253,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://codingforfun.cn/2017/04/29/flask/">
+    <link itemprop="mainEntityOfPage" href="http://codingforfun.cn/2017/04/29/install-redis/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Raddit">
@@ -274,7 +274,7 @@
             
             
               
-                flask
+                安装redis
               
             
           </h1>
@@ -289,7 +289,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-29T10:42:00+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-29T11:16:50+08:00">
                 2017-04-29
               </time>
             
@@ -325,17 +325,36 @@
 
       
         <ol>
-<li><p>安装pip</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt install python-pip</div></pre></td></tr></table></figure>
+<li><p>依赖环境</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install build-essential tcl</div></pre></td></tr></table></figure>
 </li>
-<li><p>安装Flask</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pip install Flask</div></pre></td></tr></table></figure>
+<li><p>安装redis</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">cd /tmp</div><div class="line">curl -O http://download.redis.io/redis-stable.tar.gz</div><div class="line">tar xzvf redis-stable.tar.gz</div><div class="line">cd redis-stable</div><div class="line">make</div><div class="line">make test</div><div class="line">sudo make install</div></pre></td></tr></table></figure>
 </li>
-<li><p>hello word</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> flask <span class="keyword">import</span> Flask</div><div class="line">app = Flask(__name__)</div><div class="line"></div><div class="line"><span class="meta">@app.route("/")</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">hello</span><span class="params">()</span>:</span></div><div class="line">    <span class="keyword">return</span> <span class="string">"Hello World!"</span></div><div class="line"></div><div class="line"><span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:</div><div class="line">    app.run()</div></pre></td></tr></table></figure>
+<li><p>配置redis</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo mkdir /etc/redis</div><div class="line">sudo cp /tmp/redis-stable/redis.conf /etc/redis</div></pre></td></tr></table></figure>
 </li>
-<li><p>运行</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">export FLASK_APP=hello.py</div><div class="line">export FLASK_DEBUG=1</div><div class="line">flask run # --port 8080 --host ip</div></pre></td></tr></table></figure></li>
+<li><p>配置/etc/redis/redis.conf</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">supervised systemd</div><div class="line">dir /var/lib/redis</div></pre></td></tr></table></figure>
+</li>
+<li><p>Create a Redis systemd Unit File</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">touch /etc/systemd/system/redis.service</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>填入以下内容<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">[Unit]</div><div class="line">Description=Redis In-Memory Data Store</div><div class="line">After=network.target</div><div class="line"></div><div class="line">[Service]</div><div class="line">User=redis</div><div class="line">Group=redis</div><div class="line">ExecStart=/usr/local/bin/redis-server /etc/redis/redis.conf</div><div class="line">ExecStop=/usr/local/bin/redis-cli shutdown</div><div class="line">Restart=always</div><div class="line"></div><div class="line">[Install]</div><div class="line">WantedBy=multi-user.target</div></pre></td></tr></table></figure></p>
+<ol>
+<li><p>创建redis用户</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sudo adduser --system --group --no-create-home redis</div><div class="line">sudo mkdir /var/lib/redis</div><div class="line">sudo chown redis:redis /var/lib/redis</div><div class="line">sudo chmod 770 /var/lib/redis</div></pre></td></tr></table></figure>
+</li>
+<li><p>启动redis服务</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo systemctl start redis</div></pre></td></tr></table></figure>
+</li>
+<li><p>配置redis自启动</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo systemctl enable redis</div></pre></td></tr></table></figure>
+</li>
+<li><p>测试redis</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">redis-cli</div><div class="line">&gt;ping</div><div class="line">PONG</div><div class="line">&gt;set test &quot;It&apos;s working!&quot;</div><div class="line">&gt;get test</div></pre></td></tr></table></figure>
+</li>
 </ol>
 
       
@@ -373,18 +392,14 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/04/29/install-redis/" rel="next" title="安装redis">
-                <i class="fa fa-chevron-left"></i> 安装redis
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/04/29/update-nodejs/" rel="prev" title="升级nodejs">
-                升级nodejs <i class="fa fa-chevron-right"></i>
+              <a href="/2017/04/29/flask/" rel="prev" title="flask">
+                flask <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
