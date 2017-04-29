@@ -97,7 +97,7 @@
 <meta property="og:url" content="http://codingforfun.cn/2017/04/29/install-redis/index.html">
 <meta property="og:site_name" content="Codingforfun">
 <meta property="og:description" content="依赖环境 1sudo apt-get install build-essential tcl  安装redis 1234567cd /tmpcurl -O http://download.redis.io/redis-stable.tar.gztar xzvf redis-stable.tar.gzcd redis-stablemakemake testsudo make install  配置">
-<meta property="og:updated_time" content="2017-04-29T03:26:17.000Z">
+<meta property="og:updated_time" content="2017-04-29T14:37:21.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="安装redis">
 <meta name="twitter:description" content="依赖环境 1sudo apt-get install build-essential tcl  安装redis 1234567cd /tmpcurl -O http://download.redis.io/redis-stable.tar.gztar xzvf redis-stable.tar.gzcd redis-stablemakemake testsudo make install  配置">
@@ -355,6 +355,12 @@
 <li><p>测试redis</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">redis-cli</div><div class="line">&gt;ping</div><div class="line">PONG</div><div class="line">&gt;set test &quot;It&apos;s working!&quot;</div><div class="line">&gt;get test</div></pre></td></tr></table></figure>
 </li>
+<li><p>安装flask-redis</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pip install flask-redis</div></pre></td></tr></table></figure>
+</li>
+<li><p>在flask中使用redis</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">from flask import Flask</div><div class="line">from flask_redis import FlaskRedis</div><div class="line">app = Flask(__name__)</div><div class="line">redis_store = FlaskRedis(app)</div><div class="line">redis_store.get(&apos;test&apos;)</div><div class="line"></div><div class="line"># or</div><div class="line">def create_app():</div><div class="line">    app = Flask(__name__)</div><div class="line">    redis_store.init_app(app)</div><div class="line">    return app</div></pre></td></tr></table></figure>
+</li>
 </ol>
 
       
@@ -391,6 +397,10 @@
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/04/29/flask-redis/" rel="next" title="安装flask_redis">
+                <i class="fa fa-chevron-left"></i> 安装flask_redis
+              </a>
             
           </div>
 
@@ -463,7 +473,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-count">9</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
